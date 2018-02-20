@@ -28,19 +28,24 @@ namespace rectangle
 
         }
 
-        public float FindArea(float h, float w)
+        public float FindArea()
 
         {
 
-            return h * w;
+        return Height * Width;
+
+        }
+        public int Sum(int a, int b) { 
+            
+            return a + b;
 
         }
 
-        public float FindPerimeter(float h, float w)
+    public float FindPerimeter()
 
         {
 
-            return (h + w) * 2;
+            return (Height + Width) * 2;
 
         }
 
@@ -52,9 +57,9 @@ namespace rectangle
 
             Width = w;
 
-            Area = FindArea(h, w);
+            Area = FindArea();
 
-            Perimeter = FindPerimeter(h, w);
+            Perimeter = FindPerimeter();
 
         }
 
@@ -67,12 +72,6 @@ namespace rectangle
         }
 
     }
-
-
-
-
-
-
 
     class Program
 

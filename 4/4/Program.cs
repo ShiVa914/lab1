@@ -26,19 +26,19 @@ namespace circle
 
         }
 
-        public double FindArea(double r)
+        public double FindArea()
 
         {
 
-            return Math.PI * r * r;
+            return Math.PI * Radius * Radius;
 
         }
 
-        public double FindLength(double r)
+        public double FindLength()
 
         {
 
-            return Math.PI * r * 2;
+            return Math.PI * Radius * 2;
 
         }
 
@@ -48,9 +48,9 @@ namespace circle
 
             Radius = r;
 
-            Area = FindArea(r);
+            Area = FindArea();
 
-            Length = FindLength(r);
+            Length = FindLength();
 
         }
 
@@ -78,9 +78,9 @@ namespace circle
 
             Console.WriteLine(C);
 
-            {
+            
                 Console.ReadKey();
-            }
+            
         }
 
     }

@@ -31,7 +31,7 @@ namespace student
 
         }
 
-        public Student(string n,  int a, double g)
+         public Student(string n, int a, double g)
 
         {
 
@@ -40,9 +40,15 @@ namespace student
             age = a;
 
             gpa = g;
-
+            
         }
 
+        public Student(string n, int a)
+        {
+            name = n;
+            age = a;
+        }
+        
 
 
 
@@ -65,7 +71,7 @@ namespace student
 
         {
 
-            Student b = new Student("Valera", 19, 2.01);
+            Student b = new Student("Valera", 19);
 
             Console.WriteLine(b);
 
